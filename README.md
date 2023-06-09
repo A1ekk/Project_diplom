@@ -15,3 +15,6 @@
 3. Студент
 Логин:Fitzgerald
 Пароль:Gatsby
+
+Ссылка на архив в Google Drive (на всякий случай):
+https://drive.google.com/file/d/16Hf_DUga14L0oxGwJVwNFHonDjWKlFMQ/view?usp=sharing
