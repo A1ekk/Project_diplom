@@ -1,0 +1,92 @@
+﻿<Page x:Class="Project.Pages.PageProject"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="PageProject">
+
+    <Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical">
+                <Grid Background="#002fa7">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Row="0" Name="Search" HorizontalAlignment="Stretch" Height="25" Margin="5"></TextBox>
+                    <ComboBox Grid.Column="1" Name="Filtr" HorizontalAlignment="Stretch" Height="25" Margin="5">
+                        <ComboBoxItem>Все проекты</ComboBoxItem>
+                        <ComboBoxItem>Научно-исследовательские</ComboBoxItem>
+                        <ComboBoxItem>Социальные</ComboBoxItem>
+                        <ComboBoxItem>Инновационные</ComboBoxItem>
+                        <ComboBoxItem>Предпринимательские</ComboBoxItem>
+                        <ComboBoxItem>Креативные</ComboBoxItem>
+                    </ComboBox>
+                    <ComboBox Grid.Column="2" Name="Sort" HorizontalAlignment="Stretch" Height="25" Margin="5">
+                        <ComboBoxItem>Сначала новые</ComboBoxItem>
+                        <ComboBoxItem>Сначала старые</ComboBoxItem>
+                    </ComboBox>
+                    <Button Grid.Column="3" Name="btnAddProject"  Click="btnAddProject_Click" HorizontalAlignment="Stretch" Height="25" Margin="5" Background="#ffffff" Cursor="Hand" Foreground="#002fa7">+ Добавить проект</Button>
+                </Grid>
+
+                <ListBox Name="ListProject">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Background="#002fa7">
+                                <ListBoxItem HorizontalContentAlignment="Stretch">
+                                    <Button HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Name="btnEditProject" Click="btnEditProject_Click" Cursor="Hand">
+                                        <Grid Background="#ffffff" HorizontalAlignment="Stretch" Height="175">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="0.05*"></ColumnDefinition>
+                                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                                <ColumnDefinition Width="0.05*"></ColumnDefinition>
+                                                <ColumnDefinition Width="500"></ColumnDefinition>
+                                                <ColumnDefinition Width="0.05*"></ColumnDefinition>
+                                                <ColumnDefinition Width="300"></ColumnDefinition>
+                                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="1*"></RowDefinition>
+                                                <RowDefinition Height="1*"></RowDefinition>
+                                                <RowDefinition Height="5*"></RowDefinition>
+                                                <RowDefinition Height="1*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+
+                                            <Canvas Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock Name="ImageString" Text="{Binding project_logo}" Visibility="Hidden" Width="100"></TextBlock>
+                                                    <Image Source="{Binding Text, ElementName=ImageString}" Width="100" Height="100"></Image>
+                                                </StackPanel>
+                                            </Canvas>
+
+                                            <TextBlock Grid.Row="0" Grid.Column="3" Name="project_name" Text="{Binding project_name}" Height="25" HorizontalAlignment="left"/>
+                                            <TextBlock Grid.Row="1" Grid.Column="3" Name="project_type" Text="{Binding project_type}" Height="25" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                                            <TextBlock Grid.Row="2" Grid.Column="3" Name="project_objective" Text="{Binding project_objective}"
+                                                TextAlignment="Justify" TextWrapping="Wrap"  VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
+                                            <TextBlock Grid.Row="3" Grid.Column="3" Name="date_creation" Text="{Binding date_creation, StringFormat={}{0:dd.MM.yyyy}}" Height="25" HorizontalAlignment="left"/>
+                                            <TextBlock Visibility="Hidden" Name="id_project" Text=""></TextBlock>
+
+                                            <TextBlock Grid.Row="0" Grid.Column="5" Text="Вакансии: " Style="{StaticResource txtbl}" HorizontalAlignment="Left"></TextBlock>
+                                            <TextBlock Grid.Row="1" Grid.Column="5" Grid.RowSpan="2" TextAlignment="Justify"  Name="project_vacancy" Text="{Binding project_vacancies}" HorizontalAlignment="Left" VerticalAlignment="Stretch" TextWrapping="Wrap"/>
+
+                                        </Grid>
+                                    </Button>
+                                </ListBoxItem>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

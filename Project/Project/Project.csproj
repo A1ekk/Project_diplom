@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D80E4FBC-7C7F-47BD-94BE-49A4E264BBD7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AppData\Achieved_levels.cs">
+      <DependentUpon>ModelDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\Application_status.cs">
+      <DependentUpon>ModelDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\CalcFinalGrade.cs" />
+    <Compile Include="AppData\Grades.cs">
+      <DependentUpon>ModelDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\MessageDigest5.cs" />
+    <Compile Include="AppData\ModelDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\ModelDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\ModelDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\Product_types.cs">
+      <DependentUpon>ModelDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\Projects.cs">
+      <DependentUpon>ModelDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\Project_types.cs">
+      <DependentUpon>ModelDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\Roles.cs">
+      <DependentUpon>ModelDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\Teams.cs">
+      <DependentUpon>ModelDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\Team_roles.cs">
+      <DependentUpon>ModelDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\Users.cs">
+      <DependentUpon>ModelDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageAdminPanel.xaml.cs">
+      <DependentUpon>PageAdminPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageAddAchievedLevels.xaml.cs">
+      <DependentUpon>PageAddAchievedLevels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageAddAppStatus.xaml.cs">
+      <DependentUpon>PageAddAppStatus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageAddProductTypes.xaml.cs">
+      <DependentUpon>PageAddProductTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageAddProjectTypes.xaml.cs">
+      <DependentUpon>PageAddProjectTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageAddRoles.xaml.cs">
+      <DependentUpon>PageAddRoles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageAddTeamRoles.xaml.cs">
+      <DependentUpon>PageAddTeamRoles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageEditAchievedLevels.xaml.cs">
+      <DependentUpon>PageEditAchievedLevels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageEditAppStatus.xaml.cs">
+      <DependentUpon>PageEditAppStatus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageEditProductTypes.xaml.cs">
+      <DependentUpon>PageEditProductTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageEditProjectTypes.xaml.cs">
+      <DependentUpon>PageEditProjectTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageEditRoles.xaml.cs">
+      <DependentUpon>PageEditRoles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageEditTeamRoles.xaml.cs">
+      <DependentUpon>PageEditTeamRoles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageListAchievedLevels.xaml.cs">
+      <DependentUpon>PageListAchievedLevels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageListAppStatus.xaml.cs">
+      <DependentUpon>PageListAppStatus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageListProductTypes.xaml.cs">
+      <DependentUpon>PageListProductTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageListProjectTypes.xaml.cs">
+      <DependentUpon>PageListProjectTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageListRoles.xaml.cs">
+      <DependentUpon>PageListRoles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageListTeamRoles.xaml.cs">
+      <DependentUpon>PageListTeamRoles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\PageListUsers.xaml.cs">
+      <DependentUpon>PageListUsers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ValidationFields\BindablePasswordBox.cs" />
+    <Compile Include="ValidationFields\DoubleValidator.cs" />
+    <Compile Include="ValidationFields\EmailValidator.cs" />
+    <Compile Include="ValidationFields\LoginValidator.cs" />
+    <Compile Include="ValidationFields\PasswordValidator.cs" />
+    <Compile Include="ValidationFields\PatronymicValidator.cs" />
+    <Compile Include="ValidationFields\PhoneValidator.cs" />
+    <Compile Include="ValidationFields\NameValidator.cs" />
+    <Compile Include="ValidationFields\SurnameValidator.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppData\CheckAuthorization.cs" />
+    <Compile Include="AppData\ConnectObj.cs" />
+    <Compile Include="AppData\FrameObj.cs" />
+    <Compile Include="AppData\ProjectObj.cs" />
+    <Compile Include="AppData\UserObj.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\PageAddProject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageAdminPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageAuthorization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageEditProfile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageEditProject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagePersonalAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageProject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageRegistration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageAddAchievedLevels.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageAddAppStatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageAddProductTypes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageAddProjectTypes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageAddRoles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageAddTeamRoles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageEditAchievedLevels.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageEditAppStatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageEditProductTypes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageEditProjectTypes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageEditRoles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageEditTeamRoles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageListAchievedLevels.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageListAppStatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageListProductTypes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageListProjectTypes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageListRoles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageListTeamRoles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\PageListUsers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pages\PageAddProject.xaml.cs">
+      <DependentUpon>PageAddProject.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageAuthorization.xaml.cs">
+      <DependentUpon>PageAuthorization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageEditProfile.xaml.cs">
+      <DependentUpon>PageEditProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageEditProject.xaml.cs">
+      <DependentUpon>PageEditProject.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagePersonalAccount.xaml.cs">
+      <DependentUpon>PagePersonalAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageProject.xaml.cs">
+      <DependentUpon>PageProject.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageRegistration.xaml.cs">
+      <DependentUpon>PageRegistration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="AppData\ModelDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AppData\ModelDB.edmx.diagram">
+      <DependentUpon>ModelDB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\pattern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\plus.png" />
+    <Resource Include="Resources\picture.png" />
+    <Resource Include="Resources\AvatatDefault.png" />
+    <Resource Include="Resources\ProjectLogo1.jpg" />
+    <Resource Include="Resources\ProjectLogo2.jpg" />
+    <Resource Include="Resources\ProjectLogo3.jpg" />
+    <Resource Include="Resources\ProjectLogo4.jpg" />
+    <Resource Include="Resources\ProjectLogo5.jpg" />
+    <Resource Include="logo.ico" />
+    <Resource Include="Resources\logo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppData\ModelDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDB.edmx</DependentUpon>
+      <LastGenOutput>ModelDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AppData\ModelDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDB.edmx</DependentUpon>
+      <LastGenOutput>ModelDB.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

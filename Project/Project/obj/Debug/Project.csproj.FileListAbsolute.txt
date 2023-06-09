@@ -1,0 +1,201 @@
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\MainWindow.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\App.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project_MarkupCompile.cache
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project_MarkupCompile.lref
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\bin\Debug\Project.exe.config
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\bin\Debug\Project.exe
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\bin\Debug\Project.pdb
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\MainWindow.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project.g.resources
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project.exe
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project.pdb
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\App.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\bin\Debug\EntityFramework.dll
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\bin\Debug\EntityFramework.xml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageAuthorization.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project_Content.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageAuthorization.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project.csproj.CopyComplete
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageRegistration.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageRegistration.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageProject.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageProject.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PagePersonalAccount.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PagePersonalAccount.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageEditProfile.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageEditProfile.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageAddProject.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageAddProject.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageEditProject.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageEditProject.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageAdminPanel.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PageAdminPanel.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PagesAdmin\PageListUsers.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project\Project\Project\obj\Debug\Pages\PagesAdmin\PageListUsers.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\MainWindow.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageAddProject.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageAdminPanel.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageAuthorization.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageEditProfile.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageEditProject.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagePersonalAccount.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageProject.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageRegistration.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListUsers.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\App.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project_Content.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project_MarkupCompile.cache
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project_MarkupCompile.lref
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project.exe
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project.pdb
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\bin\Debug\Project.exe.config
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\bin\Debug\Project.exe
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\bin\Debug\Project.pdb
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\bin\Debug\EntityFramework.dll
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\bin\Debug\EntityFramework.xml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\App.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\MainWindow.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageAddProject.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageAdminPanel.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageAuthorization.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageEditProfile.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageEditProject.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagePersonalAccount.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageProject.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PageRegistration.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListUsers.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project.g.resources
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Project.csproj.CopyComplete
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListAppStatus.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListProductTypes.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListProjectTypes.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListRoles.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListTeamRoles.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListAppStatus.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListProductTypes.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListProjectTypes.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListRoles.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListTeamRoles.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListAchievedLevels.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageListAchievedLevels.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddRoles.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditRoles.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddRoles.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditRoles.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddAchievedLevels.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddAppStatus.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddProductTypes.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddProjectTypes.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddTeamRoles.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditAchievedLevels.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditAppStatus.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditProductTypes.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditProjectTypes.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditTeamRoles.g.cs
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddAchievedLevels.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddAppStatus.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddProductTypes.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddProjectTypes.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddTeamRoles.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditAchievedLevels.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditAppStatus.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditProductTypes.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditProjectTypes.baml
+C:\Users\Molok\OneDrive\Рабочий стол\Project — копия\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditTeamRoles.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\bin\Debug\Project.exe.config
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\bin\Debug\Project.exe
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\bin\Debug\Project.pdb
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\bin\Debug\EntityFramework.dll
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\bin\Debug\EntityFramework.xml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\MainWindow.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageAddProject.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageAdminPanel.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageAuthorization.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageEditProfile.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageEditProject.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagePersonalAccount.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageProject.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageRegistration.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddAchievedLevels.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddAppStatus.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddProductTypes.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddProjectTypes.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddRoles.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddTeamRoles.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditAchievedLevels.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditAppStatus.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditProductTypes.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditProjectTypes.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditRoles.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditTeamRoles.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListAchievedLevels.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListAppStatus.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListProductTypes.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListProjectTypes.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListRoles.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListTeamRoles.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListUsers.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\App.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project_Content.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project_MarkupCompile.cache
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project_MarkupCompile.lref
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\App.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\MainWindow.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageAddProject.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageAdminPanel.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageAuthorization.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageEditProfile.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageEditProject.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagePersonalAccount.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageProject.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PageRegistration.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddAchievedLevels.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddAppStatus.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddProductTypes.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddProjectTypes.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddRoles.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageAddTeamRoles.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditAchievedLevels.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditAppStatus.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditProductTypes.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditProjectTypes.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditRoles.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageEditTeamRoles.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListAchievedLevels.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListAppStatus.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListProductTypes.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListProjectTypes.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListRoles.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListTeamRoles.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Pages\PagesAdmin\PageListUsers.baml
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project.g.resources
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project.csproj.CopyComplete
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project.exe
+C:\Users\Molok\Source\Repos\A1ekk\Project_diplom\Project\Project\obj\Debug\Project.pdb

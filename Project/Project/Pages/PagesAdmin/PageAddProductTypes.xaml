@@ -1,0 +1,34 @@
+﻿<Page x:Class="Project.Pages.PagesAdmin.PageAddProductTypes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project.Pages.PagesAdmin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageAddProductTypes">
+
+    <Grid>
+        <Grid Width="500" Height="100" Background="#ffffff">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.05*"></ColumnDefinition>
+                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                <ColumnDefinition Width="0.05*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.RowSpan="3" Grid.ColumnSpan="4" BorderBrush="#002fa7" BorderThickness="2" CornerRadius="25"></Border>
+
+            <TextBlock Grid.Column="1" Grid.Row="0" Text="Название:" Style="{StaticResource txtbl}"></TextBlock>
+            <TextBox Grid.Column="2" Grid.Row="0" Name="txtbxName" Style="{StaticResource txtbx}"></TextBox>
+
+            <Button Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Name="btnAddItem" Style="{StaticResource btnMain}" Click="btnAddItem_Click">Добавить новую запись</Button>
+
+        </Grid>
+    </Grid>
+</Page>

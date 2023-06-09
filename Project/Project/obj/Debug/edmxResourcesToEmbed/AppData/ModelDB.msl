@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище db_cefabModelContainer" CdmEntityContainer="db_cefabEntities">
+    <EntitySetMapping Name="Achieved_levels">
+      <EntityTypeMapping TypeName="db_cefabModel.Achieved_levels">
+        <MappingFragment StoreEntitySet="Achieved_levels">
+          <ScalarProperty Name="id_achieved_level" ColumnName="id_achieved_level" />
+          <ScalarProperty Name="level_name" ColumnName="level_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Application_status">
+      <EntityTypeMapping TypeName="db_cefabModel.Application_status">
+        <MappingFragment StoreEntitySet="Application_status">
+          <ScalarProperty Name="id_application_status" ColumnName="id_application_status" />
+          <ScalarProperty Name="name_application_status" ColumnName="name_application_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grades">
+      <EntityTypeMapping TypeName="db_cefabModel.Grades">
+        <MappingFragment StoreEntitySet="Grades">
+          <ScalarProperty Name="id_grade" ColumnName="id_grade" />
+          <ScalarProperty Name="final_grade" ColumnName="final_grade" />
+          <ScalarProperty Name="idea_grade" ColumnName="idea_grade" />
+          <ScalarProperty Name="team_grade" ColumnName="team_grade" />
+          <ScalarProperty Name="innovation_grade" ColumnName="innovation_grade" />
+          <ScalarProperty Name="marketing_grade" ColumnName="marketing_grade" />
+          <ScalarProperty Name="economy_grade" ColumnName="economy_grade" />
+          <ScalarProperty Name="management_grade" ColumnName="management_grade" />
+          <ScalarProperty Name="business_plan_grade" ColumnName="business_plan_grade" />
+          <ScalarProperty Name="presentation_grade" ColumnName="presentation_grade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product_types">
+      <EntityTypeMapping TypeName="db_cefabModel.Product_types">
+        <MappingFragment StoreEntitySet="Product_types">
+          <ScalarProperty Name="id_product_type" ColumnName="id_product_type" />
+          <ScalarProperty Name="type_name" ColumnName="type_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Project_types">
+      <EntityTypeMapping TypeName="db_cefabModel.Project_types">
+        <MappingFragment StoreEntitySet="Project_types">
+          <ScalarProperty Name="id_project_type" ColumnName="id_project_type" />
+          <ScalarProperty Name="type_name" ColumnName="type_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="db_cefabModel.Projects">
+        <MappingFragment StoreEntitySet="Projects">
+          <ScalarProperty Name="id_project" ColumnName="id_project" />
+          <ScalarProperty Name="project_type" ColumnName="project_type" />
+          <ScalarProperty Name="project_name" ColumnName="project_name" />
+          <ScalarProperty Name="date_creation" ColumnName="date_creation" />
+          <ScalarProperty Name="customer" ColumnName="customer" />
+          <ScalarProperty Name="project_objective" ColumnName="project_objective" />
+          <ScalarProperty Name="project_tasks" ColumnName="project_tasks" />
+          <ScalarProperty Name="project_problem" ColumnName="project_problem" />
+          <ScalarProperty Name="project_timeline" ColumnName="project_timeline" />
+          <ScalarProperty Name="prodoct_type" ColumnName="prodoct_type" />
+          <ScalarProperty Name="project_relevance" ColumnName="project_relevance" />
+          <ScalarProperty Name="required_resources" ColumnName="required_resources" />
+          <ScalarProperty Name="target_audience" ColumnName="target_audience" />
+          <ScalarProperty Name="analogues_competitors" ColumnName="analogues_competitors" />
+          <ScalarProperty Name="project_novelty" ColumnName="project_novelty" />
+          <ScalarProperty Name="business_plan" ColumnName="business_plan" />
+          <ScalarProperty Name="achieved_level" ColumnName="achieved_level" />
+          <ScalarProperty Name="final_result" ColumnName="final_result" />
+          <ScalarProperty Name="project_logo" ColumnName="project_logo" />
+          <ScalarProperty Name="project_grades" ColumnName="project_grades" />
+          <ScalarProperty Name="project_vacancies" ColumnName="project_vacancies" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="db_cefabModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="id_role" ColumnName="id_role" />
+          <ScalarProperty Name="role_name" ColumnName="role_name" />
+          <ScalarProperty Name="access_level" ColumnName="access_level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Team_roles">
+      <EntityTypeMapping TypeName="db_cefabModel.Team_roles">
+        <MappingFragment StoreEntitySet="Team_roles">
+          <ScalarProperty Name="id_team_role" ColumnName="id_team_role" />
+          <ScalarProperty Name="name_team_role" ColumnName="name_team_role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teams">
+      <EntityTypeMapping TypeName="db_cefabModel.Teams">
+        <MappingFragment StoreEntitySet="Teams">
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="id_project" ColumnName="id_project" />
+          <ScalarProperty Name="team_role" ColumnName="team_role" />
+          <ScalarProperty Name="application_status" ColumnName="application_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="db_cefabModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="patronymic" ColumnName="patronymic" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

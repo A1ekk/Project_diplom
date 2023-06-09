@@ -1,0 +1,41 @@
+﻿<Page x:Class="Project.Pages.PageAdminPanel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageAdminPanel">
+
+    <Grid>
+        <Grid Width="500" Height="400" Background="#ffffff">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.25*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="0.25*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.05*"></ColumnDefinition>
+                <ColumnDefinition Width="0.45*"></ColumnDefinition>
+                <ColumnDefinition Width="0.45*"></ColumnDefinition>
+                <ColumnDefinition Width="0.05*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.RowSpan="6" Grid.ColumnSpan="4" BorderBrush="#002fa7" BorderThickness="2" CornerRadius="25"></Border>
+
+            <Button Grid.Column="1" Grid.Row="1" Name="btnUsers" Click="btnUsers_Click" Style="{StaticResource btnAdminPanel}">Пользователи</Button>
+            <Button Grid.Column="2" Grid.Row="1" Name="btnProjects" Click="btnProjects_Click" Style="{StaticResource btnAdminPanel}">Проекты</Button>
+            <Button Grid.Column="1" Grid.Row="2" Name="btnApplicationStatus" Click="btnApplicationStatus_Click" Style="{StaticResource btnAdminPanel}">Статусы заявок</Button>
+            <Button Grid.Column="2" Grid.Row="2" Name="btnTeamRoles" Click="btnTeamRoles_Click" Style="{StaticResource btnAdminPanel}">Роли в командах</Button>
+            <Button Grid.Column="1" Grid.Row="3" Name="btnProjectTypes" Click="btnProjectTypes_Click" Style="{StaticResource btnAdminPanel}">Типы проектов</Button>
+            <Button Grid.Column="2" Grid.Row="3" Name="btnProductTypes" Click="btnProductTypes_Click" Style="{StaticResource btnAdminPanel}">Типы продуктов</Button>
+            <Button Grid.Column="1" Grid.Row="4" Name="btnRoles" Click="btnRoles_Click" Style="{StaticResource btnAdminPanel}">Роли в системе</Button>
+            <Button Grid.Column="2" Grid.Row="4" Name="btnAchivedLevels" Click="btnAchivedLevels_Click" Style="{StaticResource btnAdminPanel}">Этапы проектов</Button>
+        </Grid>
+    </Grid>
+</Page>

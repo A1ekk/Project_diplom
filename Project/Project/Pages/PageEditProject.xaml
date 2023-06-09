@@ -1,0 +1,315 @@
+﻿<Page x:Class="Project.Pages.PageEditProject"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project.Pages" 
+      xmlns:local1="clr-namespace:Project.ValidationFields"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="PageEditProject">
+
+    <Page.Resources>
+        <ControlTemplate x:Key="validationErrorTemplate">
+            <DockPanel>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                    <Grid Width="12" Height="12">
+                        <Ellipse Width="12" Height="12" Fill="Red" HorizontalAlignment="Center" VerticalAlignment="Center"></Ellipse>
+                        <TextBlock Foreground="White" FontWeight="Heavy" FontSize="8" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
+                               ToolTip="{Binding ElementName=ErrorAdorner, Path=AdornedElement.(Validation.Errors)[0].ErrorContent}">X</TextBlock>
+                    </Grid>
+                    <TextBlock Foreground="Red" Margin="2,0,0,0" Text="{Binding ElementName=ErrorAdorner, Path=AdornedElement.(Validation.Errors)[0].ErrorContent}"></TextBlock>
+                </StackPanel>
+                <Border BorderBrush="Red" BorderThickness="1">
+                    <AdornedElementPlaceholder x:Name="ErrorAdorner">
+                    </AdornedElementPlaceholder>
+                </Border>
+            </DockPanel>
+        </ControlTemplate>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80*"></ColumnDefinition>
+            <ColumnDefinition Width="200*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer Grid.Column="0" Background="#ffffff" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="5"></RowDefinition>
+                        <RowDefinition Height="10*"></RowDefinition>
+                        <RowDefinition Height="10*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Button Grid.Column="1" Grid.Row="1" Name="btnSubmitApply" Click="btnSubmitApply_Click" Style="{StaticResource btnMain}" Content="Подать заявку на вступление в проект"></Button>
+                    <Button Grid.Column="1" Grid.Row="1" Name="btnDeleteProject" Click="btnDeleteProject_Click"  Style="{StaticResource btnMain}" Content="Удалить проект"></Button>
+
+                    <Grid Grid.Column="1" Grid.Row="3" Height="450" VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="0.5*"></RowDefinition>
+                            <RowDefinition Height="0.1*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Column="0" Grid.Row="1" Text="Оценка: Идея" Style="{StaticResource txtblGrades}"></TextBlock>
+                        <TextBox Grid.Column="1" Grid.Row="1" Name="txtbxPointOne" Style="{StaticResource txtbx}"
+                         Validation.ErrorTemplate="{StaticResource validationErrorTemplate}">
+                            <TextBox.Text>
+                                <Binding Path="Double" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                    <Binding.ValidationRules>
+                                        <local1:DoubleValidator></local1:DoubleValidator>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+
+
+                        <TextBlock Grid.Column="0" Grid.Row="2" Text="Оценка: Команда" Style="{StaticResource txtblGrades}"></TextBlock>
+                        <TextBox Grid.Column="1" Grid.Row="2" Name="txtbxPointTwo" Style="{StaticResource txtbx}"
+                         Validation.ErrorTemplate="{StaticResource validationErrorTemplate}">
+                            <TextBox.Text>
+                                <Binding Path="Double" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                    <Binding.ValidationRules>
+                                        <local1:DoubleValidator></local1:DoubleValidator>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+
+                        <TextBlock Grid.Column="0" Grid.Row="3" Text="Оценка: Инновационность" Style="{StaticResource txtblGrades}"></TextBlock>
+                        <TextBox Grid.Column="1" Grid.Row="3" Name="txtbxPointThree" Style="{StaticResource txtbx}"
+                         Validation.ErrorTemplate="{StaticResource validationErrorTemplate}">
+                            <TextBox.Text>
+                                <Binding Path="Double" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                    <Binding.ValidationRules>
+                                        <local1:DoubleValidator></local1:DoubleValidator>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+
+                        <TextBlock Grid.Column="0" Grid.Row="4" Text="Оценка: Маркетинг" Style="{StaticResource txtblGrades}"></TextBlock>
+                        <TextBox Grid.Column="1" Grid.Row="4" Name="txtbxPointFour" Style="{StaticResource txtbx}"
+                         Validation.ErrorTemplate="{StaticResource validationErrorTemplate}">
+                            <TextBox.Text>
+                                <Binding Path="Double" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                    <Binding.ValidationRules>
+                                        <local1:DoubleValidator></local1:DoubleValidator>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+
+                        <TextBlock Grid.Column="0" Grid.Row="5" Text="Оценка: Экономика" Style="{StaticResource txtblGrades}"></TextBlock>
+                        <TextBox Grid.Column="1" Grid.Row="5" Name="txtbxPointFive" Style="{StaticResource txtbx}"
+                         Validation.ErrorTemplate="{StaticResource validationErrorTemplate}">
+                            <TextBox.Text>
+                                <Binding Path="Double" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                    <Binding.ValidationRules>
+                                        <local1:DoubleValidator></local1:DoubleValidator>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+
+                        <TextBlock Grid.Column="0" Grid.Row="6" Text="Оценка: Управление" Style="{StaticResource txtblGrades}"></TextBlock>
+                        <TextBox Grid.Column="1" Grid.Row="6" Name="txtbxPointSix" Style="{StaticResource txtbx}"
+                         Validation.ErrorTemplate="{StaticResource validationErrorTemplate}">
+                            <TextBox.Text>
+                                <Binding Path="Double" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                    <Binding.ValidationRules>
+                                        <local1:DoubleValidator></local1:DoubleValidator>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+
+                        <TextBlock Grid.Column="0" Grid.Row="7" Text="Оценка: Бизнес-план" Style="{StaticResource txtblGrades}"></TextBlock>
+                        <TextBox Grid.Column="1" Grid.Row="7" Name="txtbxPointSeven" Style="{StaticResource txtbx}"
+                         Validation.ErrorTemplate="{StaticResource validationErrorTemplate}">
+                            <TextBox.Text>
+                                <Binding Path="Double" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                    <Binding.ValidationRules>
+                                        <local1:DoubleValidator></local1:DoubleValidator>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+
+                        <TextBlock Grid.Column="0" Grid.Row="8" Text="Оценка: Презентация" Style="{StaticResource txtblGrades}"></TextBlock>
+                        <TextBox Grid.Column="1" Grid.Row="8" Name="txtbxPointEight" Style="{StaticResource txtbx}"
+                         Validation.ErrorTemplate="{StaticResource validationErrorTemplate}">
+                            <TextBox.Text>
+                                <Binding Path="Double" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                    <Binding.ValidationRules>
+                                        <local1:DoubleValidator></local1:DoubleValidator>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+
+                        <Button Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" Name="btnResult" Click="btnResult_Click" Style="{StaticResource btnAccessRole}">Оценить</Button>
+
+                        <TextBlock Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2" Name="txtblResult" HorizontalAlignment="Center" Style="{StaticResource txtbl}"></TextBlock>
+                    </Grid>
+
+                    <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Vertical">
+
+                        <ListBox Name="ListTeams" HorizontalAlignment="Stretch">
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="ListBoxItem">
+                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid HorizontalAlignment="Stretch" Background="#002fa7">
+                                        <ListBoxItem HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+                                            <Button Name="btnAddInTeam" Click="btnAddInTeam_Click" Style="{StaticResource btnRoleTeam}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Cursor="Hand">
+                                                <Grid Background="#ffffff" HorizontalAlignment="Stretch" Height="50">
+                                                    
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="1*"></RowDefinition>
+                                                        <RowDefinition Height="1*"></RowDefinition>
+                                                        <RowDefinition Height="1*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+
+                                                    <TextBlock Grid.Column="0" Grid.Row="0" Name="ImageString" Text="{Binding avatar}" Visibility="Hidden" Width="1" Height="1"></TextBlock>
+                                                    <Ellipse Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Height="25" Width="25">
+                                                        <Ellipse.Fill>
+                                                            <ImageBrush Stretch="UniformToFill" ImageSource="{Binding Text, ElementName=ImageString}"/>
+                                                        </Ellipse.Fill>
+                                                    </Ellipse>
+
+                                                    <TextBlock Grid.Column="0" Grid.Row="0" Name="IdUser" Text="{Binding id_user}" Visibility="Hidden" Width="1" Height="1"></TextBlock>
+                                                    <TextBlock Grid.Column="1" Grid.Row="0" Name="UserSurname" Text="{Binding surname}" Height="25" HorizontalAlignment="Stretch"/>
+                                                    <TextBlock Grid.Column="1" Grid.Row="1" Name="UserName" Text="{Binding name}" Height="25" HorizontalAlignment="Stretch"/>
+                                                    <TextBlock Grid.Column="1" Grid.Row="2" Name="TeamRole" Text="{Binding name_team_role}" Height="25" HorizontalAlignment="Stretch"/>
+
+                                                    <TextBlock Grid.Column="0" Grid.Row="0" Name="ApplicationStatus" Text="{Binding application_status}" Visibility="Hidden" Width="1" Height="1"></TextBlock>
+                                                    <TextBlock Grid.Column="0" Grid.Row="0" Name="ImageStringPlust" Text="Resources\plus.png" Visibility="Visible" Width="1" Height="1"></TextBlock>
+                                                    <Ellipse Grid.Column="2" Grid.Row="0" Grid.RowSpan="3" HorizontalAlignment="Right" Margin="5" Style="{StaticResource ellpsAccess}" Height="25" Width="25">
+                                                        <Ellipse.Fill>
+                                                            <ImageBrush Stretch="UniformToFill" ImageSource="{Binding Text, ElementName=ImageStringPlust}"/>
+                                                        </Ellipse.Fill>
+                                                    </Ellipse>
+
+                                                </Grid>
+                                            </Button>
+                                        </ListBoxItem>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+
+        <ScrollViewer Grid.Column="1" Background="#002fa7">
+            <StackPanel Orientation="Vertical">
+
+                <TextBlock Name="txtblRoleUser" Visibility="Hidden" Height="1"></TextBlock>
+                <TextBlock Name="txtblRoleTeam" Visibility="Hidden" Height="1"></TextBlock>
+                <TextBlock Text="Название проекта" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Должно отражать основную идею проекта." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxProjectName" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Тип проекта" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Выбрать:" Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <ComboBox Name="cmbbxProjectType" Style="{StaticResource cmbbx}"></ComboBox>
+
+                <TextBlock Text="Вакансии" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Напишите, кто нужен для вашего проекта (должность/роль)." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxProjectVacancies" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Заказчик проекта" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Кто является заказчиком вашего проекта (если есть)." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxCustomer" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Цель проекта" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Опишите цель вашего проекта. Помните, что цель должна быть достижимой и измеримой." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxProjectObjective" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Задачи проекта" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Должны раскрывать путь к достижению цели." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxProjectTasks" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Сроки выполнения проекта" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Сроки, в которые выполняется проект." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxProjectTimeline" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Тип продукта" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Выбрать:" Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <ComboBox Name="cmbbxProductType" Style="{StaticResource cmbbx}"></ComboBox>
+                
+                <TextBlock Text="Проблематика проекта" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Проблема, которую решает проект." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxProjectProblem" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Актуальность проекта" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Опишите актуальность проблемы (ее значимость), на которую направлен ваш проект." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxProjectRelevance" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Требуемые ресурсы" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Перечислите ресурсы необходимые для реализации проекта." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxRequiredResources" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Целевая аудитория" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Характеристики целевой аудитории (социальные, экономические, поведенческие и т.д.)." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxTargetAudience" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Конкуренты и аналоги" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Кто еще решает данную проблему? Каковы характеристики его решения? Чем оно лучше/слабее вашего?" Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxAnaloguesCompetitors" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Новизна проекта" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Чем ваше решение принципиально отличается от аналогов и конкурентов? Преимущества вашего решения." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxProjectNovelty" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Бизнес-план" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Составить бизнес-план вашего проекта, прикрепите ссылку на получившийся документ." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxBusinessPlan" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <TextBlock Text="Этап реализации" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Выбрать:" Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <ComboBox Name="cmbbxAchievedLevel" Style="{StaticResource cmbbx}"></ComboBox>
+
+                <TextBlock Text="Конечный результат" Style="{StaticResource txtblEditProject}"></TextBlock>
+                <TextBlock Text="Создайте презентацию вашего проекта, прикрепите ссылку на презентацию." Style="{StaticResource txtblEditProjectHelp}"></TextBlock>
+                <TextBox Name="txtbxFinalResult" Style="{StaticResource txtbxEditProject}"></TextBox>
+
+                <Button Name="btnSaveChanges" Style="{StaticResource btnRoleTeam}" Click="btnSaveChanges_Click" Background="#002fa7" Foreground="#ffffff" FontFamily="Comic Sans MS" Height="50">Сохранить изменения</Button>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

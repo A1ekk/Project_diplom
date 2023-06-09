@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b1987b1ed6204fb68ab99566fae0bd65" Name="Diagram1" ZoomLevel="83">
+        <EntityTypeShape EntityType="db_cefabModel.Achieved_levels" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_cefabModel.Application_status" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_cefabModel.Grades" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_cefabModel.Product_types" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_cefabModel.Project_types" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_cefabModel.Projects" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_cefabModel.Roles" Width="1.5" PointX="0.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_cefabModel.Team_roles" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_cefabModel.Teams" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_cefabModel.Users" Width="1.5" PointX="3" PointY="17.125" IsExpanded="true" />
+        <AssociationConnector Association="db_cefabModel.FK_Project_Achieved_levels" ManuallyRouted="false" />
+        <AssociationConnector Association="db_cefabModel.FK_Teams_Application_status" ManuallyRouted="false" />
+        <AssociationConnector Association="db_cefabModel.FK_Projects_Grades" ManuallyRouted="false" />
+        <AssociationConnector Association="db_cefabModel.FK_Project_Product_types" ManuallyRouted="false" />
+        <AssociationConnector Association="db_cefabModel.FK_Project_Project_types" ManuallyRouted="false" />
+        <AssociationConnector Association="db_cefabModel.FK_Teams_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="db_cefabModel.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="db_cefabModel.FK_Teams_Team_roles" ManuallyRouted="false" />
+        <AssociationConnector Association="db_cefabModel.FK_Teams_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

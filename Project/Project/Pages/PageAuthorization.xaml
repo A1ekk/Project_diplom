@@ -1,0 +1,50 @@
+﻿<Page x:Class="Project.Pages.PageAuthorization"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="PageAuthorization">
+
+    <Grid>
+        <Grid Width="500" Height="200" Background="#ffffff">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.25*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="0.5*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="0.5*"></RowDefinition>
+                <RowDefinition Height="0.25*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.05*"></ColumnDefinition>
+                <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                <ColumnDefinition Width="0.05*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.RowSpan="7" Grid.ColumnSpan="4" BorderBrush="#002fa7" BorderThickness="2" CornerRadius="25"></Border>
+
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="Логин: " Style="{StaticResource txtbl}" Width="auto" VerticalAlignment="Center"></TextBlock>
+            <TextBox Grid.Row="1" Grid.Column="2" Name="txtbxLogin" HorizontalAlignment="Stretch" Height="25" ></TextBox>
+
+            <TextBlock Grid.Row="2" Grid.Column="1" Text="Пароль: " Style="{StaticResource txtbl}" Width="auto" VerticalAlignment="Center"></TextBlock>
+            <PasswordBox Grid.Row="2" Grid.Column="2" Name="txtbxPassword" HorizontalAlignment="Stretch" Height="25"></PasswordBox>
+
+            <TextBox Grid.Row="2" Grid.Column="2" Name="txtbxPassText" Visibility="Collapsed" HorizontalAlignment="Stretch" Height="25"></TextBox>
+
+            <CheckBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left" Name="ShowPassCheckBox" Content="Показать текст пароля"
+              IsChecked="False" 
+              Unchecked="ShowPass_Unchecked"  Checked="ShowPass_Checked"/>
+
+            <Button Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Name="btnAutorization" Style="{StaticResource btnMain}" Click="btnAuthorization_Click">Войти</Button>
+            <TextBlock Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Hyperlink NavigateUri="PageRegistration.xaml">Регистрация</Hyperlink>
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Page>
