@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Project",
+    "\\Project\\Project",
+    "\\Project\\Project\\Pages"
   ],
+  "SelectedNode": "\\Project\\Project\\Pages\\PageEditProject.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
